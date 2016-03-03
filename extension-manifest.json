@@ -1,0 +1,71 @@
+{
+  "manifestVersion": 1,
+  "id": "PeterGroenewegen-Xpirit-Vsts-Build-InlinePowershell",
+  "name": "Run Inline Powershell",
+  "version": "1.0.1",
+  "publisher": "petergroenewegen",
+  "public": true,
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "Build extension that enable you to run Inline Powershell from a textbox.",
+  "categories": [
+    "Build and release"
+  ],
+  "tags": [
+    "powershell",
+    "build",
+    "inline"
+  ],
+  "screenshots": [
+    {
+      "path": "Xpirit.Vsts.Build.InlinePowershell.Extension/images/screenshots/vsts-InlinePowershell-task.png"
+    },
+    {
+      "path": "Xpirit.Vsts.Build.InlinePowershell.Extension/images/screenshots/vsts-InlinePowershell-InlinePowershell.png"
+    }
+  ],
+  "content": {
+    "details": {
+      "path": "Xpirit.Vsts.Build.InlinePowershell.Extension/readme.md"
+    },
+    "license": {
+      "path": "Xpirit.Vsts.Build.InlinePowershell.Extension/license.txt"
+    }
+  },
+  "links": {
+    "getstarted": {
+      "uri": "https://github.com/XpiritBV/Vsts-Build-Task-InlinePowershell/wiki"
+    },
+    "support": {
+      "uri": "https://github.com/XpiritBV/Vsts-Build-Task-InlinePowershell/wiki"
+    }
+  },
+  "branding": {
+    "color": "rgb(36, 43, 50)",
+    "theme": "dark"
+  },
+  "icons": {
+    "default": "Xpirit.Vsts.Build.InlinePowershell.Extension/images/Powershell.png"
+  },
+  "files": [
+    {
+      "path": "Xpirit-Vsts-Build-InlinePowershell"
+    }
+  ],
+
+  "contributions": [
+    {
+      "id": "Xpirit-Vsts-Build-InlinePowershell",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "Xpirit-Vsts-Build-InlinePowershell"
+      }
+    }
+  ]
+}

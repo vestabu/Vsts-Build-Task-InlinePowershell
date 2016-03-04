@@ -1,6 +1,6 @@
 # Xpirit.Vsts.Build.InlinePowershell
 
-Build extension that enable you to run inline Powershell. You can execute the powershell you enter in the textbox.
+Build extension that enable you to run Powershell entered in a textbox. You can choose to run in a normal Powershell or an Azure Powershell. 
 
 # Documentation
 

@@ -1,8 +1,8 @@
 {
   "manifestVersion": 1,
   "id": "PeterGroenewegen-Xpirit-Vsts-Build-InlinePowershell",
-  "name": "Run Inline Powershell",
-  "version": "1.0.1",
+  "name": "Run Inline Powershell and Azure Powershell",
+  "version": "1.0.2",
   "publisher": "petergroenewegen",
   "public": true,
   "targets": [
@@ -10,14 +10,16 @@
       "id": "Microsoft.VisualStudio.Services"
     }
   ],
-  "description": "Build extension that enable you to run Inline Powershell from a textbox.",
+  "description": "Build extension that enable you to run Powershell and Azure Powershell from a textbox.",
   "categories": [
     "Build and release"
   ],
   "tags": [
     "powershell",
     "build",
-    "inline"
+    "inline",
+    "azure",
+    "azurepowershell"
   ],
   "screenshots": [
     {
@@ -53,6 +55,9 @@
   "files": [
     {
       "path": "Xpirit-Vsts-Build-InlinePowershell"
+    },
+    {
+      "path": "Xpirit-Vsts-Build-InlineAzurePowershell"
     }
   ],
 
@@ -65,6 +70,16 @@
       ],
       "properties": {
         "name": "Xpirit-Vsts-Build-InlinePowershell"
+      }
+    },
+    {
+      "id": "Xpirit-Vsts-Build-InlineAzurePowershell",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "Xpirit-Vsts-Build-InlineAzurePowershell"
       }
     }
   ]
